@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2>Obejcts Data Structure and Array.</h2>
+        <script>
+            var friends=['Janchi','Yonnah','Kyoko','Yuka','Aiah'];
+            document.write(friends[0] + "<br>");
+
+            var fr = friends.join('--');
+            document.write(friends + "<br>DataType  :" + typeof (friends) + "<br><br>");
+            document.write(fr + "<br>DataType  :" + typeof (fr) + "<br><br>");
+
+            var y = friends.pop();
+            document.write(friends + "<br>");
+            document.write("<br>Deleted element :" + y + "<br><br>");
+
+            function f1(){
+                var i;
+                var sum=0
+                for (a = 0; a <arguments.length; a +=1) {
+                    document.write(arguments[a] + "<br><br>");
+                    sum = sum + arguments[a];
+                }
+                document.write(sum + "<br><br>");
+            }
+            f1(30,23,28,15,47)
+        </script>
+    </body>
+</html>
